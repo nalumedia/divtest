@@ -1,6 +1,8 @@
 # Shopify Language Test
 The locale= paramater will pass through to the Shopify cart using this script. For example:  
-[https://nalumedia.github.io/divtest/test.html?locale=es](https://nalumedia.github.io/divtest/test.html?locale=es) passes locale=es to https://54a328-2.myshopify.com/cart/47308723945755:1?locale=es.   
+[https://nalumedia.github.io/divtest/test.html?locale=es](https://nalumedia.github.io/divtest/test.html?lang=es) passes locale=es to https://54a328-2.myshopify.com/cart/47308723945755:1?locale=es.   
+
+To use this script go to test.html and paste <script>code... </script> into the <head> of the wordpress template. Then just add id="localizedCartButton" to any link you wnat to add the locale= parameter to. 
 
 
 Here is a list of languages Shopify supports:   
