@@ -1,4 +1,6 @@
 # Shopify Language Test
+Updated script at [https://nalumedia.github.io/divtest/test2.html?locale=es](https://nalumedia.github.io/divtest/test2.html?lang=es)
+
 The locale= paramater will pass through to the Shopify cart using this script. For example:  
 [https://nalumedia.github.io/divtest/test.html?locale=es](https://nalumedia.github.io/divtest/test.html?lang=es) passes locale=es to https://54a328-2.myshopify.com/cart/47308723945755:1?locale=es.   
 
