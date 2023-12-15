@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Localized Cart Button</title>
+    <script type="text/javascript">
+        function getLocaleParameter() {
+            var params = new URLSearchParams(window.location.search);
+            var lang = params.get('lang'); // Gets the value of 'lang' from the current URL
+
+            // Special handling for 'pt-br' to 'pt-BR'
+            if (lang === 'pt-br') {
+                return 'pt-BR';
+            }
+
+            // Return the 'lang' value for any other language
+            return lang;
+        }
+
+        function updateButtonHref() {
+            var cartUrl = 'https://54a328-2.myshopify.com/cart/47308723945755:1';
+            var locale = getLocaleParameter();
+            
+            if (locale) {
+                // Append the locale parameter to the cart URL
+                cartUrl += '?locale=' + locale;
+            }
+
+            // Update the button's href attribute
+            document.getElementById('localizedCartButton').href = cartUrl;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateButtonHref);
+    </script>
+</head>
+<body>
+    <!-- Button to go to the localized cart URL -->
+    <a href="#" id="localizedCartButton" class="button">Go to Localized Cart</a>
+</body>
+</html>
